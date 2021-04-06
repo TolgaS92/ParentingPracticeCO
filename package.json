@@ -1,0 +1,32 @@
+{
+  "name": "project-2-du-bootcamp",
+  "version": "1.0.0",
+  "description": "- Description: We are using Rob’s wife as our client, and building her a new website that solves some of her business challenges.\r - MVP: A polished website that increases her visibility online. A new client can create create a new account. When creating a new account the client will be given a form to fill out that is a questionare based on the childrens needs each client has a sleep log that they fill out daily\r - reach goals: Schedule reminders based on baby sleep cycle",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TolgaS92/Project-2-DU-Bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TolgaS92/Project-2-DU-Bootcamp/issues"
+  },
+  "homepage": "https://github.com/TolgaS92/Project-2-DU-Bootcamp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
