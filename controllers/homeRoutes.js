@@ -15,10 +15,12 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
+    
     if(req.session.logged_in) {
         res.redirect('/');
         return;
     }
+    console.log(req.session);
     res.render('login');
 });
 
@@ -53,5 +55,5 @@ router.get('/', withAuth, async (req,res) => {
     } catch (error) {
         res.status(500).json(error);
     }
-})
+});
 module.exports = router;
