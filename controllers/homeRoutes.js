@@ -25,14 +25,14 @@ router.get('/login', (req, res) => {
 });
 
 
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/sleepchart', withAuth, async (req, res) => {
     try {
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
             include: [{ model: Child }],
         });
         const user = userData.get({ plain: true });
-        res.render('profile', {
+        res.render('sleepchart', {
             ...user,
             logged_in: req.session.logged_in
         });
