@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS parenting_practice_db;
-CREATE DATABASE parenting_practice_db;
+DROP DATABASE IF EXISTS Parenting_Practice_db;
+CREATE DATABASE Parenting_Practice_db;
