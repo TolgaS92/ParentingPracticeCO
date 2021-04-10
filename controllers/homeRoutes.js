@@ -33,11 +33,26 @@ router.get('/profile', withAuth, async (req, res) => {
         const user = userData.get({ plain: true });
         res.render('profile', {
             ...user,
-            logged_in: true
+            logged_in: req.session.logged_in
         });
     } catch (error) {
         res.status(500).json(err);
     }
 });
 
+
+router.get('/', withAuth, async (req,res) => {
+    try {
+        const childData = await Child.findByPk(req.session.user_id, {
+            include: [{ model: User }],
+        });
+        const child = childData.get({ plain: true });
+        res.render('profile', {
+            ...child,
+            logged_in: req.session.logged_in
+        });
+    } catch (error) {
+        res.status(500).json(error);
+    }
+})
 module.exports = router;
