@@ -15,17 +15,24 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">PPCO</a>
+      <a class="navbar-brand" href="/">PPCO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+          {{#if logged_in}}
+          <a class="nav-link text-warning disabled">Welcome {{logged_name}}!</a>
+          {{/if}}
           <a class="nav-link active" aria-current="page" href="/">Home</a>
+          {{#if logged_in}}
           <a class="nav-link" href="/sleepchart">Sleep Chart</a>
-          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/profile">Profile</a>
           <a class="nav-link" href="/" id="logout">Logout</a>
+          {{else}}
+          <a class="nav-link" href="/login">Login</a>
+          {{/if}}
         </div>
       </div>
     </div>
@@ -34,6 +41,12 @@
     <!-- Render the sub layout -->
     {{{ body }}}
   </main>
+  <footer class="d-flex justify-content-center mt-5">
+    &copy; Parentin Practice CO
+  </footer>
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

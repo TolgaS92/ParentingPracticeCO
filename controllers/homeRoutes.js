@@ -7,7 +7,13 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
-        res.render('homepage');
+        const userData = await User.findAll(req.body);
+        const users = userData.map((user) => user.get({ plain: true }));
+        res.render('homepage', {
+            users,
+            logged_in: req.session.logged_in,
+            logged_name: req.session.logged_name,
+        });
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
@@ -34,7 +40,8 @@ router.get('/sleepchart', withAuth, async (req, res) => {
         const user = userData.get({ plain: true });
         res.render('sleepchart', {
             ...user,
-            logged_in: req.session.logged_in
+            logged_in: req.session.logged_in,
+            logged_name: req.session.logged_name
         });
     } catch (error) {
         res.status(500).json(err);
@@ -42,7 +49,7 @@ router.get('/sleepchart', withAuth, async (req, res) => {
 });
 
 
-router.get('/', withAuth, async (req,res) => {
+/* router.get('/', withAuth, async (req,res) => {
     try {
         const childData = await Child.findByPk(req.session.user_id, {
             include: [{ model: User }],
@@ -55,5 +62,5 @@ router.get('/', withAuth, async (req,res) => {
     } catch (error) {
         res.status(500).json(error);
     }
-});
+}); */
 module.exports = router;
