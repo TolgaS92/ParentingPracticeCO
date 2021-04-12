@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <span>{{name}}</span>
+                    <span>{{lastName}}</span>
+                </div>
+                <div class="card-body">
+                    {{email}}
+                </div>
+            </div>
+        </div>
+        {{#each childs as |child|}}
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <span>{{child.firstName}}</span>
+                    <span>{{child.lastName}}</span>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <a type="button" class="btn btn-dark" href="/profile/newchild">+ Child</a>
+    </div>
+</div>
