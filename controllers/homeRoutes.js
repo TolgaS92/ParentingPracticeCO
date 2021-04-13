@@ -49,7 +49,7 @@ router.get('/sleepchart', withAuth, async (req, res) => {
 });
 
 
-/* router.get('/', withAuth, async (req,res) => {
+router.get('/child/:d', withAuth, async (req,res) => {
     try {
         const childData = await Child.findByPk(req.session.user_id, {
             include: [{ model: User }],
@@ -62,5 +62,5 @@ router.get('/sleepchart', withAuth, async (req, res) => {
     } catch (error) {
         res.status(500).json(error);
     }
-}); */
+});
 module.exports = router;
