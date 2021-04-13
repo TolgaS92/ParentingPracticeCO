@@ -1,53 +1,53 @@
 <div class="row">
   <div class="col-md-6">
-    <form class="form sleepchart-form">
-       <div class="form-group">
-        <label for="sleepchart">AM Wake Time:</label>
-        <input class="form-input" type="text" id="amWakeup" />
+    <form class="form sleepchart-form" method="POST" action="/api/sleepchart">
+      <div class="form-group">
+        <label class="form-label" for="sleepchart">AM Wake Time:</label>
+        <input class="form-input" name="am_wake_time" type="text" id="amWakeup" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Nap 1:</label>
-        <input class="form-input" type="text" id="firstNap" />
+        <label class="form-label" for="sleepchart">Nap 1:</label>
+        <input class="form-input" name="nap1" type="text" id="firstNap" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Nap 1 Time in Bed:</label>
-        <input class="form-input" type="text" id="bedTime" />
+        <label class="form-label" for="sleepchart">Nap 1 Time in Bed:</label>
+        <input class="form-input" name="nap_time_in_bed" type="text" id="bedTime" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Nap 1 Time Asleep:</label>
-        <input class="form-input" type="text" id="sleepTime" />
+        <label class="form-label" for="sleepchart">Nap 1 Time Asleep:</label>
+        <input class="form-input" name="nap_time_asleep" type="text" id="sleepTime" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Nap 1 Time Awake:</label>
-        <input class="form-input" type="text" id="awakeTime" />
+        <label class="form-label" for="sleepchart">Nap 1 Time Awake:</label>
+        <input class="form-input" name="nap_time_awake" type="text" id="awakeTime" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Nap 1 Total Duration:</label>
-        <input class="form-input" type="text" id="napDuration" />
+        <label class="form-label" for="sleepchart">Nap 1 Total Duration:</label>
+        <input class="form-input" name="nap_total_duration" type="text" id="napDuration" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Bedtime :</label>
-        <input class="form-input" type="text" id="bedtime" />
+        <label class="form-label" for="sleepchart">Bedtime :</label>
+        <input class="form-input" name="bedtime" type="text" id="bedtime" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Bedtime Time in Bed:</label>
-        <input class="form-input" type="text" id="timeInBed" />
+        <label class="form-label" for="sleepchart">Bedtime Time in Bed:</label>
+        <input class="form-input" name="bed_time_time_in_bed" type="text" id="timeInBed" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Bedtime Time Asleep:</label>
-        <input class="form-input" type="text" id="timeAsleep" />
+        <label class="form-label" for="sleepchart">Bedtime Time Asleep:</label>
+        <input class="form-input" name="bedtime_time_asleep" type="text" id="timeAsleep" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Bedtime Awake:</label>
-        <input class="form-input" type="text" id="timeAwake" />
+        <label class="form-label" for="sleepchart">Bedtime Awake:</label>
+        <input class="form-input" name="bedtime_time_awake" type="text" id="timeAwake" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Bedtime Total Duration:</label>
-        <input class="form-input" type="text" id="bedtimeDuration" />
+        <label class="form-label" for="sleepchart">Bedtime Total Duration:</label>
+        <input class="form-input" name="bedtime_total_duration" type="text" id="bedtimeDuration" />
       </div>
       <div class="form-group">
-        <label for="sleepchart">Number of Feedings:</label>
-        <input class="form-input" type="text" id="feedings" />
+        <label class="form-label" for="sleepchart">Number of Feedings:</label>
+        <input class="form-input" name="feed" type="text" id="feedings" />
       </div>
       <div class="form-group">
         <button class="btn btn-primary" type="submit">Sleep Chart</button>
@@ -55,3 +55,6 @@
     </form>
   </div>
 </div>
+
+{{!--
+<script src="./js/sleepchartform.js"></script> --}}
