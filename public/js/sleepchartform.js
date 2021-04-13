@@ -1,23 +1,22 @@
 const sleepChartForm = async (event) => {
     event.preventDefault();
-    const amWakeUp = document.querySelector('#amWakeup').value.trim();
-    const firstNap = document.querySelector('#firstNap').value.trim();
-    const napTimeInBed = document.querySelector('#bedTime').value.trim();
-    const napTimeAsleep = document.querySelector('#sleepTime').value.trim();
-    const napTimeAwake = document.querySelector('#awakeTime').value.trim();
-    const napDuration = document.querySelector('#napDuration').value.trim();
-    const bedtime = document.querySelector('#bedtime').value.trim();
-    const bedtimeTimeInBed = document.querySelector('#timeAsleep').value.trim();
-    const bedtimeAwake = document.querySelector('#timeAwake').value.trim();
-    const bedtimeTotalDuration = document.querySelector('#bedtimeDuration').value.trim();
-    const feedings = document.querySelector('#feedings').value.trim();
-    
-    const napTimeInBed = document.querySelector('#bedTime').value.trim();
-    const feedings = document.querySelector('#feedings').value.trim();
+    const amWakeUp = document.querySelector('#amWakeup').value;
+    const firstNap = document.querySelector('#firstNap').value;
+    const napTimeAsleep = document.querySelector('#sleepTime').value;
+    const napTimeAwake = document.querySelector('#awakeTime').value;
+    const napDuration = document.querySelector('#napDuration').value;
+    const bedtime = document.querySelector('#bedtime').value;
+    const bedtimeTimeInBed = document.querySelector('#timeAsleep').value;
+    const bedtimeAwake = document.querySelector('#timeAwake').value;
+    const bedtimeTotalDuration = document.querySelector('#bedtimeDuration').value;
+    const feedings = document.querySelector('#feedings').value;
+    const napTimeInBed = document.querySelector('#bedTime').value;
+
+
     if (amWakeUp && firstNap && napTimeInBed && napTimeAsleep && napTimeAwake && napDuration && bedtime && bedtimeTimeInBed && bedtimeAwake && bedtimeTotalDuration && feedings) {
-        const response = await fetch ('/api/users', {
+        const response = await fetch ('/api/sleepchart', {
             method: 'POST',
-            body: JSON.stringify({amWakeUp, firstNap, napTimeInBed, napTimeAsleep, napTimeAwake, napDuration, bedtime, bedtimeTimeInBed, bedtimeAwake, bedtimeTotalDuration, feedings}),
+            body: JSON.stringify({ amWakeUp, firstNap, napTimeInBed, napTimeAsleep, napTimeAwake, napDuration, bedtime, bedtimeTimeInBed, bedtimeAwake, bedtimeTotalDuration, feedings}),
             headers: { 'Content-Type': 'application/json'},
         });
         if(response.ok) {

@@ -11,12 +11,12 @@
                 </div>
             </div>
         </div>
-        {{#each childs as |child|}}
+        {{#each Child}}
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
-                    <span>{{child.firstName}}</span>
-                    <span>{{child.lastName}}</span>
+                    <span>{{Child.first_name}}</span>
+                    <span>{{Child.last_name}}</span>
                 </div>
                 <div class="card-body">
 
@@ -26,8 +26,25 @@
         {{/each}}
     </div>
 </div>
-
-
+<div class="container mt-5">
+    <a class="list-group btn list-item main-list single-post" data-toggle="collapse" href="#collapseExample"
+        role="button" aria-expanded="false" aria-controls="collapseExample">
+        <span class="float-left">{{id}}</span>
+    </a>
+    <div class="collapse mb-3" id="collapseExample">
+        <div class="card dashboard-card">
+            <div class="list-item">
+                <div class="card-header">
+                    <span>{{id}}</span>
+                    <span class="float-right">Posted by: {{logged_name}} on {{format_date date_created}}</span>
+                </div>
+                <div class="card-body content-card">
+                    {{sleepchart.am_wake_time}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
         <a type="button" class="btn btn-dark" href="/profile/newchild">+ Child</a>

@@ -11,15 +11,15 @@ Child.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    firstName: {
+    first_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lastName: {
+    last_name: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-    childAge: {
+    child_age: {
         type: DataTypes.STRING,
         allowNull: false,
     },
