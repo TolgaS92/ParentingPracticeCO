@@ -16,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    firstName: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -24,13 +24,13 @@ User.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    phone: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
     },
     password: {
         type: DataTypes.STRING,

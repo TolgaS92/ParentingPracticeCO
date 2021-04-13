@@ -2,7 +2,7 @@
   <div class="col-md-6">
     <h2>Login</h2>
 
-    <form class="form login-form">
+    <form class="form login-form" id="login">
       <div class="form-group">
         <label for="email-login">Email:</label>
         <input class="form-input" type="text" id="email-login" />
@@ -21,23 +21,19 @@
 
     <form class="form signup-form">
       <div class="form-group">
-        <label for="name-signup">First Name:</label>
-        <input class="form-input" type="text" id="firstName-signup" />
-      </div>
-       <div class="form-group">
-        <label for="name-signup">Last Name:</label>
-        <input class="form-input" type="text" id="lastName-signup" />
+        <label for="name">First Name:</label>
+        <input class="form-input" type="text" id="name-signup" />
       </div>
       <div class="form-group">
-        <label for="email-signup">Email:</label>
+        <label for="lastName">Last Name:</label>
+        <input class="form-input" type="text" id="lastname-signup" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
         <input class="form-input" type="text" id="email-signup" />
       </div>
       <div class="form-group">
-        <label for="email-signup">Phone:</label>
-        <input class="form-input" type="text" id="phone-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
+        <label for="password">Password:</label>
         <input class="form-input" type="password" id="password-signup" />
       </div>
       <div class="form-group">
@@ -46,5 +42,4 @@
     </form>
   </div>
 </div>
-
-<script src="./public/js/login.js"></script>
+<script src="./js/signup.js"></script>
