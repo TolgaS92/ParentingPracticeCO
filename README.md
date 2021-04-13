@@ -67,23 +67,26 @@
 
 ## <img src="https://icons.iconarchive.com/icons/social-media-icons/social-buntings/48/Aim-icon.png"> Questions
 
-- E-mails:
-  [Tolga Secme](mailto:tolgasecme@icloud.com)
-  [Nathan Forgille](mailto:nathan.forgille8@gmail.com)
-  [Morgan Franke](mailto:(Morgans email))
-  [Robert Koch](mailto:(Robs email))
+1. E-mails:
 
-- Github pages:
-  [Tolga Secme](https://github.com/TolgaS92)
-  [Nathan Forgille](https://github.com/NathanForgille)
-  [Morgan Franke](https://github.com/morganleighfranke)
-  [Robert Koch](https://github.com/robwkoch)
+- [Tolga Secme](mailto:tolgasecme@icloud.com)
+- [Nathan Forgille](mailto:nathan.forgille8@gmail.com)
+- [Morgan Franke](mailto:(Morgans email))
+- [Robert Koch](mailto:(Robs email))
 
-- Linkedin:
-  [Tolga Secme](https://www.linkedin.com/in/tolgasecme/)
-  [Nathan Forgille](https://www.linkedin.com/in/tolgasecme/)
-  [Morgan Franke](https://www.linkedin.com/in/tolgasecme/)
-  [Robert Koch](https://www.linkedin.com/in/tolgasecme/)
+2. Github pages:
+
+- [Tolga Secme](https://github.com/TolgaS92)
+- [Nathan Forgille](https://github.com/NathanForgille)
+- [Morgan Franke](https://github.com/morganleighfranke)
+- [Robert Koch](https://github.com/robwkoch)
+
+3. Linkedin:
+
+- [Tolga Secme](https://www.linkedin.com/in/tolgasecme/)
+- [Nathan Forgille](https://www.linkedin.com/in/tolgasecme/)
+- [Morgan Franke](https://www.linkedin.com/in/tolgasecme/)
+- [Robert Koch](https://www.linkedin.com/in/tolgasecme/)
 
 ## Beginning story
 
