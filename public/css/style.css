@@ -70,3 +70,9 @@
    background-color: #F7A7AB;
    color:white;
 }
+
+.home-image{
+   margin-top: 10px;
+   border-radius: 50%;
+   box-shadow: 6px 5px rgb(131, 216, 228);
+}
