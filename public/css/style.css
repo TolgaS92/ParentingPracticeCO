@@ -1,5 +1,72 @@
-#login-form {
-  border: black;
-  border-style: double;
-  background-color: beige;
+.login{
+   color: #F7A7AB;
+   font-weight: bolder;
+}
+
+.email-block{
+   margin-left: 42px;
+   margin-bottom: 5px;
+}
+
+.password-block{
+   margin-left: 5px;
+   margin-top: 5px;
+}
+
+.login-btn:hover{
+   background-color: skyblue;
+   color:black;
+}
+
+.login-btn{
+   margin-top: 20px;
+   margin-left: 60px;
+   border-radius: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: #F7A7AB;
+   color:white;
+}
+
+.sign-up{
+   color: rgb(147, 218, 235);
+   font-weight: bolder;
+}
+
+.signup-btn:hover{
+   background-color: skyblue;
+   color:black;
+}
+
+.firstname-block{
+   margin-left: 5px;
+   margin-top: 5px;
+}
+
+.lastname-block{
+   margin-left: 8px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.signin-email-block{
+   margin-left: 56px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.signin-password-block{
+   margin-left: 19px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.signup-btn{
+   margin-top: 20px;
+   margin-left: 60px;
+   border-radius: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: #F7A7AB;
+   color:white;
 }
