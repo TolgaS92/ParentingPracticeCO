@@ -22,7 +22,7 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-router.get("/edit/:id", withAuth, async (req, res) => {
+/* router.get("/edit/:id", withAuth, async (req, res) => {
     try {
         const postData = await SleepChart.findByPk(req.params.id, {
             include: [{ all: true }],
@@ -35,7 +35,7 @@ router.get("/edit/:id", withAuth, async (req, res) => {
     } catch (error) {
         res.status(500).json(error);
     }
-});
+}); */
 
 router.get('/newchild', withAuth, (req, res) => {
     try {
