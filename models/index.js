@@ -7,12 +7,15 @@ User.hasMany(Child, {
   onDelete: 'CASCADE'
 });
 
-Child.belongsTo(User, {
-  foreignKey: 'user_id'
+User.hasMany(SleepChart, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
 });
 
-Child.hasMany(SleepChart, {
-    foreignKey: 'user_id'
+Child.belongsTo(User, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
 });
+
 
 module.exports = { User, Child, SleepChart };

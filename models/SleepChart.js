@@ -16,56 +16,55 @@ SleepChart.init(
         allowNull: false,
         defaultValue: DataTypes.NOW,
       },
-    amWakeTime: {
+    am_wake_time: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     nap1: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
-    napTimeInBed: {
+    nap_time_in_bed: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    napTimeAsleep: {
+    nap_time_asleep: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    napTimeAwake: {
+    nap_time_awake: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
-    napTotalDuration: {
+    nap_total_duration: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
     bedtime: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
-    BedtimeTimeInBed: {
+    bed_time_time_in_bed: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    bedtimeTimeAsleep: {
+    bedtime_time_asleep: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    bedtimeTimeAwake: {
+    bedtime_time_awake: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
-    bedtimeTotalDuration: {
+    bedtime_total_duration: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
     feed: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
+        type: DataTypes.STRING,
+        allowNull: false,
     },
-
-    userId: {
+    user_id: {
         type: DataTypes.INTEGER,
         references: {
           model: 'user',
@@ -78,7 +77,7 @@ SleepChart.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'sleep_chart',
+    modelName: 'sleepchart',
   }
 );
 
