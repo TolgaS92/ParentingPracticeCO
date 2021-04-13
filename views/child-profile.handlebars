@@ -1,61 +1,42 @@
-<table class="table">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
-</table>
-
-<table class="table">
-    <thead class="thead-light">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
-</table>
+<a class="list-group btn btn-success list-item main-list single-post" data-toggle="collapse" href="#collapseExample"
+    role="button" aria-expanded="false" aria-controls="collapseExample">
+    <span class="float-left">{{format_date date_created}}</span>
+</a>
+<div class="collapse mb-3" id="collapseExample">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Wake up time(am)</th>
+                <th scope="col">First Nap</th>
+                <th scope="col">1st Nap in bed (total)</th>
+                <th scope="col">1st Nap asleep</th>
+                <th scope="col">1st Nap awake</th>
+                <th scope="col">Total 1st Nap</th>
+                <th scope="col">Bed Time</th>
+                <th scope="col">Bed time in bed</th>
+                <th scope="col">Bed time asleep</th>
+                <th scope="col">Bed time awake</th>
+                <th scope="col">Bed time (total)</th>
+                <th scope="col">Feeding</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>{{am_wake_time}}</td>
+                <td>{{nap1}}</td>
+                <td>{{nap_time_in_bed}}</td>
+                <td>{{nap_time_asleep}}</td>
+                <td>{{nap_time_awake}}</td>
+                <td>{{nap_total_duration}}</td>
+                <td>{{bedtime}}</td>
+                <td>{{bed_time_time_in_bed}}</td>
+                <td>{{bedtime_time_asleep}}</td>
+                <td>{{bedtime_time_awake}}</td>
+                <td>{{bedtime_total_duration}}</td>
+                <td>{{feed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
