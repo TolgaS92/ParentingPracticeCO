@@ -8,7 +8,7 @@ router.post('/', withAuth, async (req,res) => {
             ...req.body,
             user_id: req.session.user_id,
         });
-        res.status(200).json(sleepData);
+        res.redirect('/profile');
     } catch (error) {
         res.status(500).json(error);
     }
