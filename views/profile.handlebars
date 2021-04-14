@@ -1,33 +1,36 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
+    <div class="justify-content-center row">
+        <div class="col-sm-8">
+            <div class="card bg-dark text-light">
                 <div class="card-header text-center">
-                    <span class="text-muted text-decoration-none">{{user.name}}</span>
-                    <span class="text-muted text-decoration-none">{{user.lastName}}</span>
+                    <span class="text-muted text-decoration-none">Parent name: </span>
+                    <span class="text-decoration-none">{{user.name}} {{user.lastName}}</span>
                 </div>
-                <div class="card-body text-center text-decoration-none">
-                    {{user.email}}
+                <div class="card-body text-center text-decoration-none btn-info">
+                    Email: {{user.email}}
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
+    </div>
+    <div class="justify-content-center row">
+        <div class="col-sm-6 mt-3">
+            <div class="card bg-dark text-light">
                 {{#each user.children as |child|}}
                 <div class="card-header text-center">
-                    <span class="text-muted text-decoration-none">{{child.first_name}}</span>
-                    <span class="text-muted text-decoration-none">{{child.last_name}}</span>
+                    <span class="text-muted text-decoration-none">Child name: </span>
+                    <span class="text-decoration-none">{{child.first_name}} {{child.last_name}}</span>
                 </div>
-                <div class="card-body text-center text-decoration-none">
-                    {{child.child_age}}
+                <div class="card-body text-center text-decoration-none btn-info">
+                    Child Age: {{child.child_age}}
                 </div>
-                <a class="btn btn-danger" href="/childprofile/{{id}}">
-                    <span class="float-left">Sleep Chart</span>
+                <a class="btn btn-warning" href="/childprofile/{{id}}">
+                    <span class="text-center btn-">Sleep Chart</span>
                 </a>
                 {{/each}}
             </div>
         </div>
     </div>
+</div>
 </div>
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
