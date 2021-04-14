@@ -1,10 +1,8 @@
-{{#if sleepcharts.length}}
-{{#each sleepcharts as |sleepchart|}}
-<a class="list-group btn bg-dark text-light mt-1" data-toggle="collapse" href="#collapseExample{{id}}" role="button"
+<a class="list-group btn bg-dark text-light" data-toggle="collapse" href="#collapseExample" role="button"
     aria-expanded="false" aria-controls="collapseExample">
     <span class="float-left">{{format_date date_created}}</span>
 </a>
-<div class="collapse mb-3" id="collapseExample{{id}}">
+<div class="collapse mb-3" id="collapseExample">
     <table class="table table-hover">
         <thead class="thead-dark">
             <tr>
@@ -42,5 +40,3 @@
         </tbody>
     </table>
 </div>
-{{/each}}
-{{/if}}

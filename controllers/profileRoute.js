@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { User, SleepChart, Child } = require('../models');
+const { User } = require('../models');
 
 const withAuth = require('../utils/auth');
 

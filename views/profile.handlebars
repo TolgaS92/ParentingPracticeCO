@@ -1,37 +1,24 @@
+<div class="jumbotron jumbotron-fluid navbar-light bg-light ">
+    <div class="container">
+        <h3 class="display-4 text-center">Parent name: {{user.name}} {{user.lastName}}</h3>
+        <h6 class="text-center">Email: {{user.email}}</h6>
+    </div>
+</div>
+{{#each user.children as |child|}}
 <div class="container">
     <div class="justify-content-center row">
-        <div class="col-sm-8">
-            <div class="card bg-dark text-light">
-                <div class="card-header text-center">
-                    <span class="text-muted text-decoration-none">Parent name: </span>
-                    <span class="text-decoration-none">{{user.name}} {{user.lastName}}</span>
-                </div>
-                <div class="card-body text-center text-decoration-none btn-info">
-                    Email: {{user.email}}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="justify-content-center row">
-        <div class="col-sm-6 mt-3">
-            <div class="card bg-dark text-light">
-                {{#each user.children as |child|}}
-                <div class="card-header text-center">
-                    <span class="text-muted text-decoration-none">Child name: </span>
-                    <span class="text-decoration-none">{{child.first_name}} {{child.last_name}}</span>
-                </div>
-                <div class="card-body text-center text-decoration-none btn-info">
-                    Child Age: {{child.child_age}}
-                </div>
-                <a class="btn btn-warning" href="/childprofile/{{id}}">
-                    <span class="text-center btn-">Sleep Chart</span>
-                </a>
-                {{/each}}
+        <div class="card bg-light text-dark" style="width: 18rem;">
+            <img src="/images/Helping-babies-sleep.jpg" class="card-img-top mt-1" alt="babypic">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{child.first_name}} {{child.last_name}}</h5>
+                <p class="card-text text-center">Child Age: {{child.child_age}}</p>
+                <a href="/childprofile/{{id}}" class="btn btn-warning d-flex justify-content-center">Sleep Chart</a>
             </div>
         </div>
     </div>
 </div>
-</div>
+{{/each}}
+
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
         <a type="button" class="btn btn-dark" href="/profile/newchild">+ Child</a>

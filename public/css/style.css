@@ -1,78 +1,106 @@
-.login{
-   color: #F7A7AB;
-   font-weight: bolder;
+body {
+  background-image: url("/images/littleprincelight.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bio-container {
+  opacity: 0.8;
 }
 
-.email-block{
-   margin-left: 42px;
-   margin-bottom: 5px;
+.bio-text {
+  font-weight: bold;
 }
 
-.password-block{
-   margin-left: 5px;
-   margin-top: 5px;
+.login {
+  color: #f7a7ab;
+  font-weight: bolder;
 }
 
-.login-btn:hover{
-   background-color: skyblue;
-   color:black;
+.email-block {
+  margin-left: 42px;
+  margin-bottom: 5px;
 }
 
-.login-btn{
-   margin-top: 20px;
-   margin-left: 60px;
-   border-radius: 5px;
-   padding-left: 20px;
-   padding-right: 20px;
-   background-color: #F7A7AB;
-   color:white;
+.password-block {
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-.sign-up{
-   color: rgb(147, 218, 235);
-   font-weight: bolder;
+.login-btn:hover {
+  background-color: skyblue;
+  color: black;
 }
 
-.signup-btn:hover{
-   background-color: skyblue;
-   color:black;
+.login-btn {
+  margin-top: 20px;
+  margin-left: 60px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f7a7ab;
+  color: white;
 }
 
-.firstname-block{
-   margin-left: 5px;
-   margin-top: 5px;
+.sign-up {
+  color: rgb(147, 218, 235);
+  font-weight: bolder;
 }
 
-.lastname-block{
-   margin-left: 8px;
-   margin-top: 5px;
-   margin-bottom: 5px;
+.signup-btn:hover {
+  background-color: skyblue;
+  color: black;
 }
 
-.signin-email-block{
-   margin-left: 56px;
-   margin-top: 5px;
-   margin-bottom: 5px;
+.firstname-block {
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-.signin-password-block{
-   margin-left: 19px;
-   margin-top: 5px;
-   margin-bottom: 5px;
+.lastname-block {
+  margin-left: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.signup-btn{
-   margin-top: 20px;
-   margin-left: 60px;
-   border-radius: 5px;
-   padding-left: 20px;
-   padding-right: 20px;
-   background-color: #F7A7AB;
-   color:white;
+.signin-email-block {
+  margin-left: 56px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.home-image{
-   margin-top: 10px;
-   border-radius: 50%;
-   box-shadow: 6px 5px rgb(131, 216, 228);
+.signin-password-block {
+  margin-left: 19px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.signup-btn {
+  margin-top: 20px;
+  margin-left: 60px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f7a7ab;
+  color: white;
+}
+
+.home-image {
+  margin-top: 10px;
+  border-radius: 50%;
+  box-shadow: 6px 5px rgb(131, 216, 228);
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #f5f5f5;
+  width: auto;
+  padding: 0 15px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
