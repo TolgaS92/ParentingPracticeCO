@@ -17,21 +17,6 @@ body {
   font-weight: bolder;
 }
 
-.email-block {
-  margin-left: 42px;
-  margin-bottom: 5px;
-}
-
-.password-block {
-  margin-left: 5px;
-  margin-top: 5px;
-}
-
-.login-btn:hover {
-  background-color: skyblue;
-  color: black;
-}
-
 .login-btn {
   margin-top: 20px;
   margin-left: 60px;
@@ -42,6 +27,11 @@ body {
   color: white;
 }
 
+.login-btn:hover {
+  background-color: skyblue;
+  color: black;
+}
+
 .sign-up {
   color: rgb(147, 218, 235);
   font-weight: bolder;
@@ -50,29 +40,6 @@ body {
 .signup-btn:hover {
   background-color: skyblue;
   color: black;
-}
-
-.firstname-block {
-  margin-left: 5px;
-  margin-top: 5px;
-}
-
-.lastname-block {
-  margin-left: 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.signin-email-block {
-  margin-left: 56px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.signin-password-block {
-  margin-left: 19px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .signup-btn {

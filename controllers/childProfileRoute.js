@@ -11,7 +11,8 @@ router.get("/:id", withAuth, async (req, res) => {
         /* res.json(user); */
         res.render('child-profile', {
             ...user,
-            logged_in: req.session.logged_in
+            logged_in: req.session.logged_in,
+            logged_name: req.session.logged_name
         });
     } catch (error) {
         res.status(500).json(error);

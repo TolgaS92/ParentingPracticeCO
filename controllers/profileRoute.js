@@ -28,7 +28,8 @@ router.get('/newchild', withAuth, (req, res) => {
     try {
         if(req.session.logged_in) {
             res.render('newchild-form',{
-                logged_in: req.session.logged_in
+                logged_in: req.session.logged_in,
+                logged_name: req.session.logged_name
             });
             return;
         }
