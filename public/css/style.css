@@ -115,3 +115,7 @@ li {
 .grow:hover {
   transform: scale(1.5);
 }
+
+.btn-hvr:hover {
+  background-color: rgb(56, 53, 53);
+}
