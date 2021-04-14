@@ -1,11 +1,18 @@
-<div class="jumbotron jumbotron-fluid navbar-light bg-light ">
+<div class="jumbotron jumbotron-fluid navbar-light bg-light animate__animated animate__zoomIn">
     <div class="container">
         <h3 class="display-4 text-center">Parent name: {{user.name}} {{user.lastName}}</h3>
         <h6 class="text-center">Email: {{user.email}}</h6>
     </div>
 </div>
-{{#each user.children as |child|}}
 <div class="container">
+    <div class="row text-center mt-5 mb-5">
+        <a href="https://calendly.com/parentingpracticeco/introduction" target="_blank">
+            <span class="schedule-btn text-decoration-none">SCHEDULE A CALL</span>
+        </a>
+    </div>
+</div>
+{{#each user.children as |child|}}
+<div class="container animate__animated animate__zoomIn">
     <div class="justify-content-center row">
         <div class="card bg-light text-dark" style="width: 18rem;">
             <img src="/images/Helping-babies-sleep.jpg" class="card-img-top mt-1" alt="babypic">

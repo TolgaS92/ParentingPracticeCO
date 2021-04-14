@@ -1,9 +1,10 @@
 body {
-  background-image: url("/images/littleprincelight.jpg");
+  background-image: url("/images/littleprince2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .bio-container {
   opacity: 0.8;
 }
@@ -42,6 +43,32 @@ body {
   color: black;
 }
 
+.signup-button {
+  background-color: rgb(177, 119, 10);
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+.schedule-btn {
+  background-color: rgb(253, 214, 142);
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
 .signup-btn {
   margin-top: 20px;
   margin-left: 60px;
@@ -70,4 +97,21 @@ body {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+ul {
+  padding: 0;
+  font-size: 2em;
+}
+li {
+  display: inline-block;
+  width: 1.2em;
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+  color: black;
+  cursor: pointer;
+}
+.grow:hover {
+  transform: scale(1.5);
 }
