@@ -1,14 +1,14 @@
 // Download the helper library from https://www.twilio.com/docs/node/install
 // Your Account Sid and Auth Token from twilio.com/console
 // and set the environment variables. See http://twil.io/secure
-// require('dotenv').config();
 
-const accountSid = 'ACd00ec84090b687fc61fc0a004439951d';
-const authToken = '8dad2405ee326419e6a70285c466ca39';
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
-
+//get numbers from the database
+//do it at 8pm 
 var numbersToMessage = ["+17203656996", "+17204251946"]
 
 numbersToMessage.forEach(function(number){
@@ -20,3 +20,5 @@ numbersToMessage.forEach(function(number){
   .then(message =>  console.log(message.status))
   .done();
 });
+
+//run code in terminal using node sms.js
