@@ -11,7 +11,7 @@ router.post('/', withAuth, async (req,res) => {
             ...req.body,
             user_id: req.session.user_id
         });
-        res.status(200).json(newChild);
+        res.redirect('/sleepchart')
     } catch (error) {
         res.status(500).json(error);
     }
