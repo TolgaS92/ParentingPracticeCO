@@ -1,45 +1,47 @@
-<div class="row">
-  <div class="login col-md-6">
-    <h2>Login</h2>
+<div class="container text-dark pt-5">
+  <div class="row mt-5 pt-5">
+    <div class="login col-6">
+      <h2>Login</h2>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">Email:</label>
-        <input class="email-block form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="password-block form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="login-btn" type="submit">Login</button>
-      </div>
-    </form>
-  </div>
-  <div class="sign-up col-md-6">
-    <h2>Signup</h2>
+      <form class="form login-form">
+        <div class="form-group">
+          <label class="col-4 form-label bg-dark text-light btn-info" for="email-login">Email:</label>
+          <input class="col-4 email-block form-input" type="text" id="email-login" />
+        </div>
+        <div class="form-group">
+          <label class="col-4 form-label bg-dark text-light btn-info" for="password-login">Password:</label>
+          <input class="col-4 password-block form-input" type="password" id="password-login" />
+        </div>
+        <div class="form-group">
+          <button class="login-btn" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+    <div class="sign-up col-6">
+      <h2>Signup</h2>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name">First Name:</label>
-        <input class="firstname-block form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input class="lastname-block form-input" type="text" id="lastname-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input class="signin-email-block form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input class="signin-password-block form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="signup-btn" type="submit">Signup</button>
-      </div>
-    </form>
+      <form class="form signup-form">
+        <div class="form-group">
+          <label class="col-4 form-label bg-dark text-light btn-info" for="name">First Name:</label>
+          <input class="col-4 firstname-block form-input" type="text" id="name-signup" />
+        </div>
+        <div class="form-group">
+          <label class="col-4 form-label bg-dark text-light btn-info" for="lastName">Last Name:</label>
+          <input class="col-4 lastname-block form-input" type="text" id="lastname-signup" />
+        </div>
+        <div class="form-group">
+          <label class="col-4 form-label bg-dark text-light btn-info" for="email">Email:</label>
+          <input class="col-4 signin-email-block form-input" type="text" id="email-signup" />
+        </div>
+        <div class="form-group">
+          <label class="col-4 form-label bg-dark text-light btn-info" for="password">Password:</label>
+          <input class="col-4 signin-password-block form-input" type="password" id="password-signup" />
+        </div>
+        <div class="form-group">
+          <button class="signup-btn" type="submit">Signup</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 <script src="./js/signup.js"></script>
