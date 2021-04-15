@@ -3,7 +3,7 @@ const app = express();
 const sms = require("../sms");
 require('dotenv').config();
 
-const PORT = process.env.PORT || 8100;
+const PORT = process.env.PORT || 3002;
 
 setInterval(() => {
     //add database call 
