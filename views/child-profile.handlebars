@@ -1,6 +1,6 @@
 {{#if sleepcharts.length}}
 {{#each sleepcharts as |sleepchart|}}
-<a class="list-group btn bg-dark text-light mt-2 pt-2" data-toggle="collapse" href="#collapseExample{{id}}"
+<a class="list-group btn bg-primary text-light mt-2 pt-2" data-toggle="collapse" href="#collapseExample{{id}}"
     role="button" aria-expanded="false" aria-controls="collapseExample">
     <span class="float-left">{{format_date date_created}}</span>
 </a>
@@ -24,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="table-info">
+            <tr class="table-primary">
                 <th scope="row">{{format_date date_created}}</th>
                 <td>{{am_wake_time}}</td>
                 <td>{{nap1}}</td>

@@ -36,7 +36,7 @@
 
 ## Deployed application link
 
-- [Deployed Link](https://young-basin-08752.herokuapp.com/)
+- [Deployed Link](https://parentingpracticeco.herokuapp.com/)
 
 ![Signin](./public/images/loginpage.jpg)
 
