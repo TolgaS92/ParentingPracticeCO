@@ -13,37 +13,6 @@ body {
   font-weight: bold;
 }
 
-.login {
-  color: skyblue;
-  font-weight: bolder;
-}
-
-.signup-button {
-  background-color: rgb(177, 119, 10);
-  font-size: 36px;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 5px;
-  margin-bottom: 5px;
-  color: #f5f5f5;
-}
-
-.login-btn:hover {
-  background-color: skyblue;
-  color: black;
-}
-
-.sign-up {
-  color: rgb(147, 218, 235);
-  font-weight: bolder;
-}
-
-.signup-btn:hover {
-  background-color: skyblue;
-  color: black;
-}
-
 .schedule-btn {
   background-color: rgb(142, 177, 253);
   font-size: 32px;
@@ -59,16 +28,6 @@ a {
   text-decoration: none;
 }
 
-.signup-btn {
-  margin-top: 20px;
-  margin-left: 60px;
-  border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #f7a7ab;
-  color: white;
-}
-
 .home-image {
   margin-top: 10px;
   border-radius: 50%;
@@ -77,17 +36,131 @@ a {
   height: auto;
 }
 
-.footer {
-  margin-top: auto;
-  background-color: #f5f5f5;
-  width: auto;
-  padding: 0 15px;
+/* NEW CHILD FORM STARTS */
+.new-child {
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+.newchild {
+  padding: 4px;
+  border-radius: 5px;
 }
+/* NEW CHILD FORM ENDS */
+
+/* SLEEP LOG CHART FORM STARTS */
+
+.wakeup {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#amWakeup {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.first-nap {
+  padding: 5px;
+  border-radius: 5px;
+}
+#firstNap {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.totalnap {
+  padding: 5px;
+  border-radius: 5px;
+}
+#bedTime {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.napasleep {
+  padding: 5px;
+  border-radius: 5px;
+}
+#sleepTime {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.napawake {
+  padding: 5px;
+  border-radius: 5px;
+}
+#awakeTime {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.totalstnap {
+  padding: 5px;
+  border-radius: 5px;
+}
+#napDuration {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.bed-time {
+  padding: 5px;
+  border-radius: 5px;
+}
+#bedtime {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.time-in-bed {
+  padding: 5px;
+  border-radius: 5px;
+}
+#timeInBed {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.time-asleep {
+  padding: 5px;
+  border-radius: 5px;
+}
+#timeAsleep {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.time-awaken {
+  padding: 5px;
+  border-radius: 5px;
+}
+#timeAwake {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.bed-duration {
+  padding: 5px;
+  border-radius: 5px;
+}
+#bedtimeDuration {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.feeded {
+  padding: 5px;
+  border-radius: 5px;
+}
+#feedings {
+  padding: 4px;
+  border-radius: 5px;
+}
+/* SLEEP LOG CHART FORM STARTS */
+
+/* SOCIAL MEDIA ICONS START */
 
 ul {
   padding: 0;
@@ -109,3 +182,136 @@ li {
 .btn-hvr:hover {
   background-color: rgb(56, 53, 53);
 }
+
+/* SOCIAL MEDIA ICONS END */
+
+.sleepless-header {
+  color: #2196f3;
+}
+
+/* Login form START */
+.login-email {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.login-pass {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.login-btn {
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.login {
+  color: skyblue;
+  font-weight: bolder;
+}
+
+.login-btn:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+#email-login {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+#password-login {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+/* Login form END */
+
+/* Sign Up form START */
+
+.sign-up {
+  color: rgb(147, 218, 235);
+  font-weight: bolder;
+}
+
+.signup-btn:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.signup-btn {
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+}
+
+.signup-name {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.signup-lastname {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.signup-email {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.signup-password {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#name-signup {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+#lastname-signup {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+#email-signup {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+#password-signup {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+/* homepage signup button start*/
+.signup-button {
+  background-color: #2196f3;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+/* homepage signup button end */
+
+/* Sign up form END */
+
+/* FOOTER START */
+.footer {
+  margin-top: auto;
+  background-color: #f5f5f5;
+  width: auto;
+  padding: 0 15px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* FOOTER END */

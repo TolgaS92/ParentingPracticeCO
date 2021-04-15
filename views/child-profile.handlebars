@@ -5,42 +5,44 @@
     <span class="float-left">{{format_date date_created}}</span>
 </a>
 <div class="collapse mb-3" id="collapseExample{{id}}">
-    <table class="table table-hover">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Date</th>
-                <th scope="col">Wake up time(am)</th>
-                <th scope="col">First Nap</th>
-                <th scope="col">1st Nap in bed (total)</th>
-                <th scope="col">1st Nap asleep</th>
-                <th scope="col">1st Nap awake</th>
-                <th scope="col">Total 1st Nap</th>
-                <th scope="col">Bed Time</th>
-                <th scope="col">Bed time in bed</th>
-                <th scope="col">Bed time asleep</th>
-                <th scope="col">Bed time awake</th>
-                <th scope="col">Bed time (total)</th>
-                <th scope="col">Feeding</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-primary">
-                <th scope="row">{{format_date date_created}}</th>
-                <td>{{am_wake_time}}</td>
-                <td>{{nap1}}</td>
-                <td>{{nap_time_in_bed}}</td>
-                <td>{{nap_time_asleep}}</td>
-                <td>{{nap_time_awake}}</td>
-                <td>{{nap_total_duration}}</td>
-                <td>{{bedtime}}</td>
-                <td>{{bed_time_time_in_bed}}</td>
-                <td>{{bedtime_time_asleep}}</td>
-                <td>{{bedtime_time_awake}}</td>
-                <td>{{bedtime_total_duration}}</td>
-                <td>{{feed}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <a href="/childprofile/edit/{{sleepchart.id}}">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Wake up time(am)</th>
+                    <th scope="col">First Nap</th>
+                    <th scope="col">1st Nap in bed (total)</th>
+                    <th scope="col">1st Nap asleep</th>
+                    <th scope="col">1st Nap awake</th>
+                    <th scope="col">Total 1st Nap</th>
+                    <th scope="col">Bed Time</th>
+                    <th scope="col">Bed time in bed</th>
+                    <th scope="col">Bed time asleep</th>
+                    <th scope="col">Bed time awake</th>
+                    <th scope="col">Bed time (total)</th>
+                    <th scope="col">Feeding</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <th scope="row">{{format_date date_created}}</th>
+                    <td>{{am_wake_time}}</td>
+                    <td>{{nap1}}</td>
+                    <td>{{nap_time_in_bed}}</td>
+                    <td>{{nap_time_asleep}}</td>
+                    <td>{{nap_time_awake}}</td>
+                    <td>{{nap_total_duration}}</td>
+                    <td>{{bedtime}}</td>
+                    <td>{{bed_time_time_in_bed}}</td>
+                    <td>{{bedtime_time_asleep}}</td>
+                    <td>{{bedtime_time_awake}}</td>
+                    <td>{{bedtime_total_duration}}</td>
+                    <td>{{feed}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </a>
 </div>
 {{/each}}
 {{/if}}

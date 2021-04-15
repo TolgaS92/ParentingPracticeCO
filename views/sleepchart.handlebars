@@ -1,84 +1,86 @@
 <div class="d-flex justify-content-center">
   <div class="row mt-5 pt-1">
-    <div class="col-12">
+    <div class="col-6">
       <form class="form sleepchart-form" method="POST" action="/api/sleepchart">
         <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
+          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft wakeup"
             for="sleepchart">Wake up time(am):</label>
           <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="am_wake_time" type="text"
             id="amWakeup" />
         </div>
         <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light  animate__animated animate__rotateInDownLeft"
+          <label class="col-6 form-label bg-primary text-light  animate__animated animate__rotateInDownLeft first-nap"
             for="sleepchart">First Nap: </label>
           <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="nap1" type="text"
             id="firstNap" />
         </div>
         <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
+          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft totalnap"
             for="sleepchart">1st Nap in bed (total):</label>
           <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="nap_time_in_bed"
             type="text" id="bedTime" />
         </div>
         <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
+          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft napasleep"
             for="sleepchart">1st Nap asleep:</label>
           <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="nap_time_asleep"
             type="text" id="sleepTime" />
         </div>
         <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
+          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft napawake"
             for="sleepchart">1st Nap awake:</label>
           <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="nap_time_awake" type="text"
             id="awakeTime" />
         </div>
         <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
+          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft totalstnap"
             for="sleepchart">Total 1st Nap:</label>
           <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="nap_total_duration"
             type="text" id="napDuration" />
         </div>
-        <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
-            for="sleepchart">Bed Time :</label>
-          <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime" type="text"
-            id="bedtime" />
-        </div>
-        <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
-            for="sleepchart">Bed time in bed:</label>
-          <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bed_time_time_in_bed"
-            type="text" id="timeInBed" />
-        </div>
-        <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
-            for="sleepchart">Bed time asleep:</label>
-          <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime_time_asleep"
-            type="text" id="timeAsleep" />
-        </div>
-        <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
-            for="sleepchart">Bed time awake:</label>
-          <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime_time_awake"
-            type="text" id="timeAwake" />
-        </div>
-        <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
-            for="sleepchart">Bed time (total):</label>
-          <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime_total_duration"
-            type="text" id="bedtimeDuration" />
-        </div>
-        <div class="form-group">
-          <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft"
-            for="sleepchart">Number of Feedings:</label>
-          <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="feed" type="text"
-            id="feedings" />
-        </div>
-        <div class="d-flex justify-content-center form-group mt-3 animate__animated animate__zoomIn">
-          <button class="btn bg-primary text-light" type="submit">Submit Form</button>
-        </div>
-      </form>
     </div>
+    <div class="col-6">
+      <div class="form-group">
+        <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft bed-time"
+          for="sleepchart">Bed Time :</label>
+        <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime" type="text"
+          id="bedtime" />
+      </div>
+      <div class="form-group">
+        <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft time-in-bed"
+          for="sleepchart">Bed time in bed:</label>
+        <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bed_time_time_in_bed"
+          type="text" id="timeInBed" />
+      </div>
+      <div class="form-group">
+        <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft time-asleep"
+          for="sleepchart">Bed time asleep:</label>
+        <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime_time_asleep"
+          type="text" id="timeAsleep" />
+      </div>
+      <div class="form-group">
+        <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft time-awaken"
+          for="sleepchart">Bed time awake:</label>
+        <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime_time_awake"
+          type="text" id="timeAwake" />
+      </div>
+      <div class="form-group">
+        <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft bed-duration"
+          for="sleepchart">Bed time (total):</label>
+        <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="bedtime_total_duration"
+          type="text" id="bedtimeDuration" />
+      </div>
+      <div class="form-group">
+        <label class="col-6 form-label bg-primary text-light animate__animated animate__rotateInDownLeft feeded"
+          for="sleepchart">Number of Feedings:</label>
+        <input class="col-5 form-input animate__animated animate__rotateInDownRight" name="feed" type="text"
+          id="feedings" />
+      </div>
+    </div>
+    <div class="d-flex justify-content-center form-group mt-3 animate__animated animate__zoomIn">
+      <button class="btn bg-primary text-light" type="submit">Submit Form</button>
+    </div>
+    </form>
   </div>
 </div>
 {{!--

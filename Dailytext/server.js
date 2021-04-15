@@ -10,5 +10,5 @@ setInterval(() => {
     //send everyday at 8pm MST
     //set for every one minute
     //check to see if it is 8pm then reset it
-}, 1000);
+}, 60000);
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
