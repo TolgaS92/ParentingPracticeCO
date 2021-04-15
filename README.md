@@ -11,6 +11,7 @@
 5. [License](#License)
 6. [Credits](#Credits)
 7. [Questions](#Questions)
+8. [Roles](#Roles)
 
 ## Technologies-Used
 
@@ -37,7 +38,7 @@
 
 - [Deployed Link](https://young-basin-08752.herokuapp.com/)
 
-![Signin](./public/images/...)
+![Signin](./public/images/loginpage.jpg)
 
 ## Usage
 
@@ -55,7 +56,7 @@
 
 - Also, users will be getting text messages to remind them to log on their page and do the daily form fill out.
 
-![Home Page](./public/images/...)
+![Home Page](./public/images/homepage.jpg)
 
 ## License
 
@@ -71,8 +72,8 @@
 
 - [Tolga Secme](mailto:tolgasecme@icloud.com)
 - [Nathan Forgille](mailto:nathan.forgille8@gmail.com)
-- [Morgan Franke](mailto:(Morgans email))
-- [Robert Koch](mailto:(Robs email))
+- [Morgan Franke](mailto:morganleighfranke@gmail.com)
+- [Robert Koch](mailto:robertwkoch@live.com)
 
 2. Github pages:
 
@@ -84,9 +85,9 @@
 3. Linkedin:
 
 - [Tolga Secme](https://www.linkedin.com/in/tolgasecme/)
-- [Nathan Forgille](https://www.linkedin.com/in/tolgasecme/)
-- [Morgan Franke](https://www.linkedin.com/in/tolgasecme/)
-- [Robert Koch](https://www.linkedin.com/in/tolgasecme/)
+- [Nathan Forgille](https://www.linkedin.com/in/nathan-forgille/)
+- [Morgan Franke](www.linkedin.com/in/morganfranke)
+- [Robert Koch](https://www.linkedin.com/in/robert-koch-66588a20b/)
 
 ## Beginning story
 
@@ -94,12 +95,12 @@
 - MVP: A polished website that increases her visibility online. A new client can create create a new account. When creating a new account the client will be given a form to fill out that is a questionare based on the childrens needs each client has a sleep log that they fill out daily
 - reach goals: Schedule reminders based on baby sleep cycle
 
-## Roles:
+## Roles
 
 - PM: Morgan
 - Github Guru: Tolga
 - Presentation Guru: Nathan
 - Readme: Tolga
 
-- Front End: Nathan and Rob
-- Back End: Morgan Tolga and Rob
+- Front End: Nathan and Rob nad Tolga
+- Back End: Morgan, Tolga and Rob
