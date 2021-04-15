@@ -1,17 +1,15 @@
 require("dotenv").config();
-// Download the helper library from https://www.twilio.com/docs/node/install
-// Your Account Sid and Auth Token from twilio.com/console
-// and set the environment variables. See http://twil.io/secure
-
+// require('dotenv').load();
 const sms = () => {
   console.log("itworks");
   console.log(process.env.TWILIO_ACCOUNT_SID);
-  const accountSid = process.env.TWILIO_ACCOUNT_SID;
-  const authToken = process.env.TWILIO_AUTH_TOKEN;
+//   const accountSid = process.env.TWILIO_ACCOUNT_SID;
+//   const authToken = process.env.TWILIO_AUTH_TOKEN;\
+    const accountSid = 'ACd00ec84090b687fc61fc0a004439951d';
+    const authToken = '96aab27b7bff485bdbdec5eab5a4d28b';
   const client = require("twilio")(accountSid, authToken);
-
-  var twilio = require("twilio");
-
+//   var twilio = require("twilio");
+// var twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_TOKEN);
   var numbersToMessage = ["+17203656996", "+17204251946"];
   console.log("thisworks too");
   numbersToMessage.forEach(function (number) {
@@ -25,5 +23,4 @@ const sms = () => {
       .done();
   });
 };
-
 module.exports = sms;
