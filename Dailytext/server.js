@@ -24,6 +24,7 @@ setInterval(() => {
     //when a number comes in from database check if it has a + and a 1, if true run function, else add + or 1 or both
     //send everyday at 8pm MST
     //check to see if it is 8pm then reset it
+
     // var now = new Date();
     // var millisTill8 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 17, 0, 0, 0) - now;
     // if (millisTill8 < 0) {
@@ -38,3 +39,6 @@ setInterval(() => {
 }, 1000 );
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
+}, 60000);
+app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
+
