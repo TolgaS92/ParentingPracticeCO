@@ -29,10 +29,11 @@
    - sequelize
 4. MySQL Database
 5. Heroku / JawsDB (Database)
+6. Twilio
 
 ## Description
 
-- Created web application for real client. Our client was having a struggle to use different applications to collect user data and comminicate with them, we have tried to solve this problem and collect the data from users. So, Client could use one platform to do a lot more.
+- Created web application for a real client who is a pediatric sleep specialist. Our client was overwhelmed with using multiple applications to interact with her clients. We have solved her problems by creating one site that collects user data on a daily bases from her clients. Now she and her clients can use one platform to do a lot more.
 
 ## Deployed application link
 
@@ -42,21 +43,21 @@
 
 ## Usage
 
-- When user go to the webpage with given link, they will be greeted by homepage with short bio of our client.
+- When user goes to the webpage with given link, they will be greeted by homepage with short bio of our client.
 
 - If the user would like to be a customer, they will have to create an account.
 
-- As soon as account created, they will be asked information about them, and their childs.
+- As soon as account is created, they will be asked information about themselves and their child.
 
-- They will have an access to their profile and informations given.
+- They will have an access to their profile.
 
 - User will have a sleep chart page that they will have to fill out daily.
 
-- They will get reviewed by admin, and comment.
+- User is able to delete a sleep chart if they made mistakes.
 
-- Also, users will be getting text messages to remind them to log on their page and do the daily form fill out.
+- Also, users will be sent a daily text message at 8pm to remind them to log on to their page and fill out the daily sleep chart.
 
-![Home Page](./public/images/homepage.jpg)
+![Home Page](./public/images/homepage.png)
 
 ## License
 
@@ -92,7 +93,7 @@
 ## Beginning story
 
 - Description: We are using Rob’s wife as our client, and building her a new website that solves some of her business challenges.
-- MVP: A polished website that increases her visibility online. A new client can create create a new account. When creating a new account the client will be given a form to fill out that is a questionare based on the childrens needs each client has a sleep log that they fill out daily
+- MVP: A polished website that increases her visibility online. A new client can create a new account. When creating a new account the client will be given a form to fill out that is a questionare based on the childrens needs. Each client has a sleep log that they fill out daily for our client to access the information easily.
 - reach goals: Schedule reminders based on baby sleep cycle
 
 ## Roles
