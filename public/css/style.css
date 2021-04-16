@@ -1,7 +1,7 @@
 body {
-  background-image: url("/images/littleprince2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("/images/seamless2.jpg");
+  background-repeat: repeat;
+  background-position: top;
   background-size: cover;
 }
 
@@ -220,7 +220,7 @@ li {
 /* SOCIAL MEDIA ICONS END */
 
 .sleepless-header {
-  color: #d4e5f3;
+  color: rgb(10, 124, 169);
 }
 
 /* Login form START */
