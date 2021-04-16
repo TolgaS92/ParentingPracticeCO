@@ -1,4 +1,4 @@
-const loginHandlerForm = async (event) => {
+const signupHandlerForm = async (event) => {
     event.preventDefault();
     const name = document.querySelector('#name-signup').value.trim();
     const lastName = document.querySelector('#lastname-signup').value.trim();
@@ -13,14 +13,14 @@ const loginHandlerForm = async (event) => {
             headers: { 'Content-Type': 'application/json'},
         });
         if(response.ok) {
-            document.location.replace('/');
+            document.location.replace('/profile/newchild');
         } else {
             alert('Failed to signup');
         }
     }
 };
 
-document.querySelector('.signup-form').addEventListener('submit', loginHandlerForm);
+document.querySelector('.signup-form').addEventListener('submit', signupHandlerForm);
 
 const loginForm = async (event) => {
     event.preventDefault();
@@ -35,7 +35,7 @@ const loginForm = async (event) => {
         });
 
         if(response.ok) {
-            document.location.replace('/');
+            document.location.replace('/sleepchart');
         } else {alert('Failed to log in')};
     }
 };

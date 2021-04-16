@@ -30,7 +30,6 @@ Child.init(
           key: 'id',
         },
       },
-      
   },
   {
     sequelize,

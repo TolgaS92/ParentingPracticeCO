@@ -19,7 +19,8 @@ router.put('/:id', withAuth, async (req, res) => {
         const sleepData = await SleepChart.update(
             {
                 ...req.body,
-                user_id: req.session.user_id
+                user_id: req.session.user_id,
+                logged_in: req.session.logged_in
             },
             {
                 where: {
