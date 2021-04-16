@@ -6,7 +6,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3002;
 
 var now = new Date();
-var millisTill8 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 20, 0, 0, 0) - now;
+var millisTill8 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 47, 0, 0) - now;
 console.log(millisTill8);
 if (millisTill8 < 0) {
    
