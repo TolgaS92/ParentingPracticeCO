@@ -1,7 +1,7 @@
 require("dotenv").config();
 // require('dotenv').load();
 const sms = () => {
-  console.log("itworks");
+
   console.log(process.env.TWILIO_ACCOUNT_SID);
 //   const accountSid = process.env.TWILIO_ACCOUNT_SID;
 //   const authToken = process.env.TWILIO_AUTH_TOKEN;\
@@ -11,7 +11,7 @@ const sms = () => {
 //   var twilio = require("twilio");
 // var twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_TOKEN);
   var numbersToMessage = ["+17203656996", "+17204251946"];
-  console.log("thisworks too");
+
   numbersToMessage.forEach(function (number) {
     var message = client.messages
       .create({
