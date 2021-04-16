@@ -1,6 +1,6 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const sms = require("../sms");
+const sms = require('../sms');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3002;
@@ -15,3 +15,4 @@ if (millisTill8 < 0) {
 setTimeout(function(){sms()}, millisTill8);
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
+
