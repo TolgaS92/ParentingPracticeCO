@@ -13,7 +13,6 @@ body {
   font-weight: bold;
 }
 
-
 .login {
   color: #f7a7ab;
   font-weight: bolder;
@@ -27,7 +26,8 @@ body {
   padding-right: 20px;
   background-color: #f7a7ab;
   color: white;
-=======
+}
+
 .schedule-btn {
   background-color: rgb(142, 177, 253);
   font-size: 32px;
@@ -74,7 +74,8 @@ a {
   font-weight: 700;
   text-decoration: none;
   border-radius: 10px;
-=======
+}
+
 .newchild {
   padding: 4px;
   border-radius: 5px;
