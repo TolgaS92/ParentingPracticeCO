@@ -1,2 +1,7 @@
 node_modules
+<<<<<<< HEAD
 .env
+.DS_Store
+=======
+.env
+>>>>>>> main

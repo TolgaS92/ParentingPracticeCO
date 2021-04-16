@@ -6,7 +6,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3002;
 
 var now = new Date();
-var millisTill8 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 14, 44, 0, 0) - now;
+var millisTill8 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 47, 0, 0) - now;
 console.log(millisTill8);
 if (millisTill8 < 0) {
    
@@ -15,4 +15,3 @@ if (millisTill8 < 0) {
 setTimeout(function(){sms()}, millisTill8);
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
-

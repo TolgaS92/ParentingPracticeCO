@@ -12,8 +12,8 @@ const sms = () => {
   numbersToMessage.forEach(function (number) {
     var message = client.messages
       .create({
-        body: "Time to log your childs sleep chart!",
-        from: "+17326075490",
+        body: 'Time to log your childs sleep chart!',
+        from: '+17326075490',
         to: number,
       })
       .then((message) => console.log(message.status))

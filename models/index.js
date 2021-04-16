@@ -17,5 +17,4 @@ Child.belongsTo(User, {
   onDelete: 'CASCADE'
 });
 
-
 module.exports = { User, Child, SleepChart };
