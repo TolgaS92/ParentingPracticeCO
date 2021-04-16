@@ -15,4 +15,3 @@ if (millisTill8 < 0) {
 setTimeout(function(){sms()}, millisTill8);
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
-
