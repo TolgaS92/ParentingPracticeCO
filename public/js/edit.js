@@ -16,7 +16,6 @@ const updateSleepLog = async (event) => {
     const bedTimeAwake = document.querySelector('#bedtime-time-awake').value;
     const bedTimeTotal = document.querySelector('#bedtime-total-duration').value;
     const feeding = document.querySelector('#feed').value;
-    
     const response = await fetch(`/api/sleepchart/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
@@ -33,10 +32,12 @@ const updateSleepLog = async (event) => {
             bedTimeAwake,
             bedTimeTotal,
             feeding
-        }),
+            }),
         headers: { 'Content-Type': 'application/json' },
     });
+    
     if (response.ok) {
+        response.json(response);
         document.location.replace(`/childprofile/${id}`);
     } else {
         alert('Failed to Update your sleep log chart!');

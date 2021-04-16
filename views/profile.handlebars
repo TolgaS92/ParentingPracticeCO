@@ -11,10 +11,11 @@
         </a>
     </div>
 </div>
-{{#each user.children as |child|}}
+
 <div class="container animate__animated animate__zoomIn">
     <div class="justify-content-center row">
-        <div class="card bg-light text-dark" style="width: 18rem;">
+        {{#each user.children as |child|}}
+        <div class="card col-sm-4 mr-3 bg-light text-dark" style="width: 18rem;">
             <img src="/images/Helping-babies-sleep.jpg" class="card-img-top mt-1" alt="babypic">
             <div class="card-body">
                 <h5 class="card-title text-center">{{child.first_name}} {{child.last_name}}</h5>
@@ -22,9 +23,9 @@
                 <a href="/childprofile/{{id}}" class="btn btn-primary d-flex justify-content-center">Sleep Chart</a>
             </div>
         </div>
+        {{/each}}
     </div>
 </div>
-{{/each}}
 
 <div class="container mt-5 animate__animated animate__zoomIn">
     <div class="d-flex justify-content-center">
