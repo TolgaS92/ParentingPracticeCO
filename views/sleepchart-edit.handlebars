@@ -1,0 +1,84 @@
+<div class="card sleepchart-card">
+    <div class="card-header bg-primary text-light">
+        <h2>Edit Sleep Chart logs</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card-body content-card">
+                    <input type="hidden" name="post-id" value="{{sleepchart.id}}" id="sleeplog-id" />
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="date_created">Create Date:</label>
+                        <input type="text" name="date_created" id="date-created" value="{{sleepchart.date_created}}"
+                            class="col-5 form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="am_wake_time">Wake up time(am):</label>
+                        <input type="text" name="am_wake_time" id="am-wake-time" value="{{sleepchart.am_wake_time}}"
+                            class="col-5 form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="nap1">First Nap:</label>
+                        <input type="text" name="nap1" id="nap-1" value="{{sleepchart.nap1}}"
+                            class="col-5 form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="nap_time_in_bed">1st Nap in bed (total):</label>
+                        <input type="text" name="nap_time_in_bed" id="nap-time-in-bed"
+                            value="{{sleepchart.nap_time_in_bed}}" class="col-5 form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="nap_time_asleep">1st Nap asleep:</label>
+                        <input type="text" name="nap_time_asleep" id="nap-time-asleep"
+                            value="{{sleepchart.nap_time_asleep}}" class="col-5 form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="nap_time_awake">1st Nap awake:</label>
+                        <input type="text" name="nap_time_awake" id="nap-time-awake"
+                            value="{{sleepchart.nap_time_awake}}" class="col-5 form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label class="col-5 form-label" for="nap_total_duration">Total 1st Nap:</label>
+                        <input type="text" name="nap_total_duration" id="nap-total-duration"
+                            value="{{sleepchart.nap_total_duration}}" class="col-5 form-input" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-5">
+                <div class="form-group">
+                    <label class="col-5 form-label" for="bedtime">Bed Time:</label>
+                    <input type="text" name="bedtime" id="bedtime" value="{{sleepchart.bedtime}}"
+                        class="col-5 form-input" />
+                </div>
+                <div class="form-group">
+                    <label class="col-5 form-label" for="bed_time_time_in_bed">Bed time in bed:</label>
+                    <input type="text" name="bed_time_time_in_bed" id="bed-time-time-in-bed"
+                        value="{{sleepchart.bed_time_time_in_bed}}" class="col-5 form-input" />
+                </div>
+                <div class="form-group">
+                    <label class="col-5 form-label" for="bedtime_time_asleep">Bed time asleep:</label>
+                    <input type="text" name="bedtime_time_asleep" id="bedtime-time-asleep"
+                        value="{{sleepchart.bedtime_time_asleep}}" class="col-5 form-input" />
+                </div>
+                <div class="form-group">
+                    <label class="col-5 form-label" for="bedtime_time_awake">Bed time awake:</label>
+                    <input type="text" name="bedtime_time_awake" id="bedtime-time-awake"
+                        value="{{sleepchart.bedtime_time_awake}}" class="col-5 form-input" />
+                </div>
+                <div class="form-group">
+                    <label class="col-5 form-label" for="bedtime_total_duration">Bed time (total):</label>
+                    <input type="text" name="bedtime_total_duration" id="bedtime-total-duration"
+                        value="{{sleepchart.bedtime_total_duration}}" class="col-5 form-input" />
+                </div>
+                <div class="form-group">
+                    <label class="col-5 form-label" for="feed">Number of Feedings:</label>
+                    <input type="text" name="feed" id="feed" value="{{sleepchart.feed}}" class="col-5 form-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-danger mb-1" id="update-btn">Update</button>
+    <button type="button" id="delete-btn" class="btn btn-dark">Delete</button>
+</div>
+
+<script src="/js/edit.js"></script>

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, SleepChart } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get("/:id", withAuth, async (req, res) => {
@@ -19,6 +19,20 @@ router.get("/:id", withAuth, async (req, res) => {
     }
 });
 
+router.get("/edit/:id", withAuth, async (req, res) => {
+    try {
+        const sleepData = await SleepChart.findByPk(req.params.id, {
+            include: [{ all: true }],
+        });
+        const sleepchart = sleepData.get({ plain: true });
+        res.render('sleepchart-edit', {
+            sleepchart,
+            logged_in: req.session.logged_in
+        });
+    } catch (error) {
+        res.status(500).json(error);
+    }
+});
 
 
 module.exports = router;
