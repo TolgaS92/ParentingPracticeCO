@@ -57,7 +57,7 @@
 
 - Also, users will be sent a daily text message at 8pm to remind them to log on to their page and fill out the daily sleep chart.
 
-![Home Page](./public/images/homepage.png)
+![Home Page](./public/images/homepage.jpg)
 
 ## License
 
