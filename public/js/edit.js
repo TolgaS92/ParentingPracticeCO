@@ -16,23 +16,24 @@ const updateSleepLog = async (event) => {
     const bedTimeAwake = document.querySelector('#bedtime-time-awake').value;
     const bedTimeTotal = document.querySelector('#bedtime-total-duration').value;
     const feeding = document.querySelector('#feed').value;
+    const user_data = {
+        date_created: createDate,
+        am_wake_time: amWakeUp,
+        nap1: firstNap,
+        nap_time_in_bed: napTimeInBed,
+        nap_time_asleep: napTimeAsleep,
+        nap_time_awake: napTimeAwake,
+        nap_total_duration: napTotalDuration,
+        bedtime: bedTime,
+        bed_time_time_in_bed: bedTimeinBed,
+        bedtime_time_asleep: bedTimeAsleep,
+        bedtime_time_awake: bedTimeAwake,
+        bedtime_total_duration: bedTimeTotal,
+        feed: feeding
+    };
     const response = await fetch(`/api/sleepchart/${id}`, {
         method: 'PUT',
-        body: JSON.stringify({
-            createDate,
-            amWakeUp,
-            firstNap,
-            napTimeInBed,
-            napTimeAsleep,
-            napTimeAwake,
-            napTotalDuration,
-            bedTime,
-            bedTimeinBed,
-            bedTimeAsleep,
-            bedTimeAwake,
-            bedTimeTotal,
-            feeding
-            }),
+        body: JSON.stringify(user_data),
         headers: { 'Content-Type': 'application/json' },
     });
     if (response.ok) {
