@@ -35,9 +35,7 @@ const updateSleepLog = async (event) => {
             }),
         headers: { 'Content-Type': 'application/json' },
     });
-    
     if (response.ok) {
-        response.json(response);
         document.location.replace(`/childprofile/${id}`);
     } else {
         alert('Failed to Update your sleep log chart!');
