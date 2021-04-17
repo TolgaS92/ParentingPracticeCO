@@ -20,7 +20,18 @@ router.put('/:id', withAuth, async (req, res) => {
             {
                 ...req.body,
                 user_id: req.session.user_id,
-                logged_in: req.session.logged_in
+                /* date_created: req.body.date_created,
+                am_wake_time: req.body.am_wake_time,
+                nap1: req.body.nap1,
+                nap_time_in_bed: req.body.nap_time_in_bed,
+                nap_time_asleep: req.body.nap_time_asleep,
+                nap_time_awake: req.body.nap_time_awake,
+                nap_total_duration: req.body.nap_total_duration,
+                bedtime: req.body.bedtime,
+                bed_time_time_in_bed: req.body.bed_time_time_in_bed,
+                bedtime_time_asleep: req.body.bedtime_time_asleep,
+                bedtime_total_duration: req.body.bedtime_total_duration,
+                feed: req.body.feed */
             },
             {
                 where: {
